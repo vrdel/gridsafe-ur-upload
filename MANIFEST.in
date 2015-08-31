@@ -1,0 +1,6 @@
+include setup.py
+include README
+include gridsafe-ur-upload.spec
+include cronjobs/*
+include bin/*
+include conf/*

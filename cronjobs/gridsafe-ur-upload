@@ -1,0 +1,1 @@
+13 0 * * * root /usr/bin/ur_genupl.py -d $(date "+\%Y-\%m-\%d")
