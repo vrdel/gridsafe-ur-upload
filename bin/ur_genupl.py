@@ -128,7 +128,7 @@ def main():
                     fields = line.split(':')
                     if fields:
                         try:
-                            datesge = datetime.date.fromtimestamp(float(fields[8]))
+                            datesge = datetime.date.fromtimestamp(float(fields[10]))
                             if datesge in dateargs:
                                 exemptlines.append(line)
                         except IndexError:

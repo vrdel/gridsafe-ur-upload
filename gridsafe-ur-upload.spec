@@ -2,7 +2,7 @@
 
 Name:           gridsafe-ur-upload
 Version:        0.1
-Release:        2%{?dist}.srce
+Release:        3%{?dist}.srce
 Summary:        Package provides scripts for generating and uploading usage records to Gridsafe Accounting Web Service
 License:        GPL
 Vendor:         SRCE 
@@ -36,7 +36,9 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) %{_sysconfdir}/%{name}/gridsafe-ur-upload.ini
 
 %changelog
+* Wed Sep 30 2015 Daniel Vrcic <dvrcic@srce.hr> - 0.1-3%{?dist}
+- look for job end time instead of submission time
 * Fri Aug 28 2015 Daniel Vrcic <dvrcic@srce.hr> - 0.1-2%{?dist}
-* added configuration file
+- added configuration file
 * Thu Aug 27 2015 Daniel Vrcic <dvrcic@srce.hr> - 0.1-1%{?dist}
 - initial version
